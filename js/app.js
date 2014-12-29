@@ -30,6 +30,7 @@ $(document).ready(function() {
 
   	$(document).keydown(function(e) {
 	    if (e.keyCode == 88) {
+	    	playCool();
 	    	$('.ryu-still').hide();
 	    	$('.ryu-ready').hide();
 	    	$('.ryu-cool').show();
@@ -51,5 +52,10 @@ function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
-}
+};
 
+function playCool () {
+	$('#cool-sound')[0].volume = 0.8;
+	$('#cool-sound')[0].load();	
+	$('#cool-sound')[0].play();
+}
