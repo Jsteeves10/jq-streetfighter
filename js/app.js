@@ -38,7 +38,7 @@ $(document).ready(function() {
     	$('.interact').text('Press X to turn Ryu into a baller');
       cool = true;
 		}
-	});
+	}); 
 });
 
 function playHadouken () {
